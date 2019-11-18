@@ -46,7 +46,7 @@ public class Toolbar: UIView {
         }
     }
     
-    private(set) var items: [ToolbarItem] = []
+    public var items: [ToolbarItem] = []
     
     // MARK: - Constraint
     
