@@ -177,13 +177,13 @@ public class Toolbar: UIView {
 
     // MARK: - 
     
-    public func setItems(_ items: [ToolbarItem], animated: Bool) {
-        self.items = items
+    public func setItems(_ itemobjs: [ToolbarItem], animated: Bool) {
+        self.items = itemobjs
         self.stackView.arrangedSubviews.forEach { (view) in
             self.stackView.removeArrangedSubview(view)
             view.removeFromSuperview()
         }
-        items.forEach { (view) in
+        self.items.forEach { (view) in
             self.stackView.addArrangedSubview(view)
         }
     }
