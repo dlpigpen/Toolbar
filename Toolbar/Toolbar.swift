@@ -183,6 +183,7 @@ public class Toolbar: UIView {
             self.stackView.removeArrangedSubview(view)
             view.removeFromSuperview()
         }
+        print(self.items)
         self.items.forEach { (view) in
             self.stackView.addArrangedSubview(view)
         }
